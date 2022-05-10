@@ -5,7 +5,16 @@ body {
     font-family:"Roboto",sans-serif;
     font-size:21px;
     display:block;
-    min-width:700px;
+    min-width:1000px;
+}
+
+img {
+    vertical-align:top;
+}
+
+.text h2 {
+    font-size:36px;
+    font-weight:bold;
 }
 
 /* Header */
@@ -19,6 +28,18 @@ body {
     align-items:center;
     height:50px;
     gap:50px;
+}
+
+.header .left {
+    display:flex;
+    align-items:center;
+    gap: 50px;
+}
+
+.header .left .github-icon {
+    background-color: rgb(72, 72, 185);
+    border-radius:45%;
+    padding:5px;
 }
 
 .header ul {
@@ -38,6 +59,8 @@ body {
     border-style:hidden;
     text-decoration:none;
     color:white;
+    white-space:nowrap;
+    overflow:hidden;
 }
 
 .header li a:hover {
@@ -70,10 +93,75 @@ body {
 .about .text {
     color:white;
     margin-top: 75px;
+    margin-bottom:75px;
     max-width: 700px;
+    text-align:center;
+    border-bottom:1px inset white;
+    border-top: 1px inset white;
+}
+
+/* Projects */
+
+.projects {
+    color:white;
+    display:flex;
+    margin:100px;
+    flex-direction:column;
+    align-items:center;
+    border-bottom:1px inset white;
+    border-top: 1px inset white;
     text-align:center;
 }
 
-.text h2 {
-    font-size:36px;
+.projects a {
+    text-decoration:none;
+    color: grey;
+}
+
+.projects a:hover {
+    color:darkgrey;
+}
+
+/* Skills and Interests */
+
+.skills-and-interests {
+    color:white;
+    display:flex;
+    margin:100px;
+    flex-direction:column;
+}
+
+.skills {
+    
+    border-bottom:1px inset white;
+    border-top: 1px inset white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.skills h2 {
+    text-align:center;
+}
+
+#skills-content {
+    display:flex;
+    justify-content:space-between;
+    width: 800px;
+}
+
+.interests {
+    border-bottom:1px inset white;
+    border-top: 1px inset white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.interests h2 {
+    text-align:center;
+}
+.interests p {
+    
+    max-width:1000px;
 }
