@@ -63,7 +63,12 @@ img {
     overflow:hidden;
 }
 
-.header li a:hover {
+.header li a.selected {
+    background-color:rgb(62, 24, 124);
+}
+
+.header li a:hover:not(.selected),
+.header .left .github-icon:hover {
     background-color: rgb(113, 43, 226);
 }
 
