@@ -40,7 +40,6 @@ img {
     background-color: rgb(72, 72, 185);
     border-radius:45%;
     padding:5px;
-    transition: all 0.7s;
 }
 
 .header ul {
@@ -62,7 +61,6 @@ img {
     color:white;
     white-space:nowrap;
     overflow:hidden;
-    transition: all 0.7s;
 }
 
 .header li a.selected {
@@ -71,6 +69,8 @@ img {
 
 .header li a:hover:not(.selected),
 .header .left .github-icon:hover {
+    transition-property:background-color;
+    transition-duration: 0.7s;
     background-color: rgb(113, 43, 226);
 }
 
@@ -127,6 +127,54 @@ img {
 
 .projects a:hover {
     color:darkgrey;
+}
+
+.projects .projects-list {
+    margin:1px;
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+}
+
+.projects .projects-list button {
+    padding:0;
+    margin:1px;
+    height:100%;
+    width:100%;
+    text-align:center;
+    font-size:2vw;
+    transition-property:background-color;
+    transition-duration:2s;
+    background-color:rgb(72, 72, 185);
+    border:none;
+    
+}
+
+.projects .projects-list a {
+    padding:0;
+    margin:1px;
+    height:20vw;
+    width:20vw;
+    flex: 1 0 20%;
+    transition-property:box-shadow;
+}
+
+.projects .projects-list a:hover {
+    transition-property:border-radius;
+    transition-duration:3s;
+    border-radius:10%;
+    transition-property:box-shadow,background-color;
+    transition-duration:0.15s;
+    background-color: rgb(113, 43, 226);
+    box-shadow: 0 0 5px 20px rgb(113, 43, 226);
+    z-index:1;
+}
+
+.projects .projects-list button:hover {
+    transition-property:box-shadow,background-color;
+    transition-duration:0.15s;
+    background-color: rgb(113, 43, 226);
 }
 
 /* Skills and Interests */
