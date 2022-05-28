@@ -1,0 +1,256 @@
+
+body {
+    margin:0;
+    background-color:rgb(34, 34, 49);
+    font-family:"Roboto",sans-serif;
+    font-size:21px;
+    display:block;
+    min-width:1000px;
+}
+
+img {
+    vertical-align:top;
+}
+
+.text h2 {
+    font-size:36px;
+    font-weight:bold;
+}
+
+/* Header */
+
+.header {
+    color:rgb(236, 236, 236);
+    display: flex;
+    background-color:rgb(13, 13, 48);
+    padding:15px;
+    justify-content:space-around;
+    align-items:center;
+    height:50px;
+    gap:50px;
+}
+
+.header .left {
+    display:flex;
+    align-items:center;
+    gap: 50px;
+}
+
+.header .left .github-icon {
+    background-color: rgb(72, 72, 185);
+    border-radius:45%;
+    padding:5px;
+}
+
+.header ul {
+    list-style-type:none;
+    display:flex;
+    margin: 0;
+    padding: 0;
+    gap:20px;
+}
+
+
+.header li a {
+    border: 1px white;
+    background-color:  rgb(72, 72, 185);
+    padding: 8px 16px;
+    border-radius:10px;
+    border-style:hidden;
+    text-decoration:none;
+    color:white;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+.header li a.selected {
+    background-color:rgb(62, 24, 124);
+}
+
+.header li a:hover:not(.selected),
+.header .left .github-icon:hover {
+    transition-property:background-color;
+    transition-duration: 0.7s;
+    background-color: rgb(113, 43, 226);
+}
+
+
+
+/* About */
+
+.about {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.about .image {
+    background-color: rgb(48, 48, 68);
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding:100px 0;
+}
+
+.about .image .profile-picture {
+    border-radius:25%;
+}
+
+.about .text {
+    color:white;
+    margin-top: 75px;
+    margin-bottom:75px;
+    max-width: 700px;
+    text-align:center;
+    border-bottom:1px inset white;
+    border-top: 1px inset white;
+}
+
+/* Projects */
+
+.projects {
+    color:white;
+    display:flex;
+    margin:100px;
+    flex-direction:column;
+    align-items:center;
+    border-bottom:1px inset white;
+    border-top: 1px inset white;
+    text-align:center;
+}
+
+.projects a {
+    text-decoration:none;
+    color: grey;
+}
+
+.projects a:hover {
+    color:darkgrey;
+}
+
+.projects .projects-list {
+    margin:1px;
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    margin-bottom:10px;
+}
+
+.projects .projects-list button {
+    padding:0;
+    margin:1px;
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:1px;
+    height:20vw;
+    width:20vw;
+    flex: 1 0 20%;
+    text-align:center;
+    font-size:2vw;
+    transition-property:background-color;
+    transition-duration:2s;
+    background-color:rgb(72, 72, 185);
+    border:none;
+    
+}
+
+
+.projects .projects-list button:hover {
+    transition-property:border-radius;
+    transition-duration:3s;
+    border-radius:2%;
+    transition-property:box-shadow,background-color;
+    transition-duration:0.15s;
+    background-color: rgb(113, 43, 226);
+    box-shadow: 0 0 5px 20px rgb(113, 43, 226);
+    z-index:1;
+}
+
+.projects .popup {
+    position:fixed;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background-color:black;
+    transition-property:opacity;
+    transition-duration:1s;
+    opacity:0;
+    z-index:-2;
+}
+
+.projects .popup-box {
+    position:fixed;
+    border:1px solid white;
+    width:50%;
+    height:50%;
+    opacity:1;
+    background-color: rgb(34, 34, 49);
+    visibility:hidden;
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+    border-radius:1vw;
+}
+
+.projects .popup-box #close-popup {
+    width:25px;
+    height:25px;
+    border-radius:12.5px;
+    margin:5px;
+    margin-left:auto;
+    background-color:rgb(72, 72, 185);
+    border:none;
+    font-size:0.5em;
+    font-weight:900;
+}
+
+.projects .popup-box #close-popup:hover {
+    background-color:rgb(113, 43, 226);
+}
+
+/* Skills and Interests */
+
+.skills-and-interests {
+    color:white;
+    display:flex;
+    margin:100px;
+    flex-direction:column;
+}
+
+.skills {
+    
+    border-bottom:1px inset white;
+    border-top: 1px inset white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.skills h2 {
+    text-align:center;
+}
+
+#skills-content {
+    display:flex;
+    justify-content:space-between;
+    width: 800px;
+}
+
+.interests {
+    border-bottom:1px inset white;
+    border-top: 1px inset white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.interests h2 {
+    text-align:center;
+}
+.interests p {
+    
+    max-width:1000px;
+}
