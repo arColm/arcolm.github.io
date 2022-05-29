@@ -1,5 +1,6 @@
 import {loadAbout} from "./about.js";
 import {loadProjects} from "./projects.js";
+import { loadSkillsAndInterests } from "./skills-and-interests.js";
 
 const body = document.querySelector("#content");
 
@@ -10,12 +11,6 @@ function clearBody() {
     body.replaceChildren();
 }
 
-/**
- * This function loads the content for the Skills and Interests section
- */
-function loadSkillsAndInterests() {
-
-}
 
 /**
  * This function places a cover on a button and removes other covers.
