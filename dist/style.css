@@ -1,8 +1,11 @@
 
+* {
+    font-family:"Roboto",sans-serif;
+}
+
 body {
     margin:0;
     background-color:rgb(34, 34, 49);
-    font-family:"Roboto",sans-serif;
     font-size:21px;
     display:block;
     min-width:1000px;
@@ -51,7 +54,7 @@ img {
 }
 
 
-.header li a {
+button {
     border: 1px white;
     background-color:  rgb(72, 72, 185);
     padding: 8px 16px;
@@ -61,13 +64,14 @@ img {
     color:white;
     white-space:nowrap;
     overflow:hidden;
+    font-size:21px;
 }
 
-.header li a.selected {
+button.selected {
     background-color:rgb(62, 24, 124);
 }
 
-.header li a:hover:not(.selected),
+button:hover:not(.selected),
 .header .left .github-icon:hover {
     transition-property:background-color;
     transition-duration: 0.7s;
