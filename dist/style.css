@@ -134,25 +134,23 @@ button:hover:not(.selected),
 }
 
 .projects .projects-list {
-    margin:1px;
-    display:flex;
+    display:inline-grid;
+    justify-content:center;
     width:100%;
-    flex-wrap:wrap;
+    grid-template-rows:repeat(auto-fill,300px);
+    grid-template-columns:repeat(auto-fill,300px);
+    align-items:center;
+    gap:1px;
     margin-bottom:10px;
 }
 
 .projects .projects-list button {
-    padding:0;
-    margin:1px;
-    height:100%;
-    width:100%;
-    padding:0;
-    margin:1px;
-    height:20vw;
-    width:20vw;
-    flex: 1 0 20%;
-    text-align:center;
-    font-size:2vw;
+    height:300px;
+    width:300px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:larger;
     transition-property:background-color;
     transition-duration:2s;
     background-color:rgb(72, 72, 185);
@@ -162,13 +160,10 @@ button:hover:not(.selected),
 
 
 .projects .projects-list button:hover {
-    transition-property:border-radius;
-    transition-duration:3s;
-    border-radius:2%;
     transition-property:box-shadow,background-color;
     transition-duration:0.15s;
     background-color: rgb(113, 43, 226);
-    box-shadow: 0 0 5px 20px rgb(113, 43, 226);
+    transform:scale(1.05);
     z-index:1;
 }
 
@@ -209,6 +204,7 @@ button:hover:not(.selected),
     border:none;
     font-size:0.5em;
     font-weight:900;
+    padding:0;
 }
 
 .projects .popup-box #close-popup:hover {
