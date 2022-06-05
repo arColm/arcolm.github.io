@@ -44,6 +44,15 @@ function addClickEventToButtons() {
                     They can be found on my github <a href="https://github.com/arColm/javascript-miniprojects">
                     here<a>`;
                     break;
+
+                case "todo-list":
+                    popupBoxHeader.innerHTML = "Todo List";
+                    popupBoxText.innerHTML = `A simple todo list web app created using JavaScript. 
+                    The primary purpose was to practice webpack and file organization, as well as OOP.
+                    However, I was quite happy with the result, which is why it is not considered a "mini project".
+                    It can be found <a href="./JSProjects/index.html">here</a>.`;
+                    break;
+
                 default:
                     popupBoxHeader.innerHTML = "PLACEHOLDER";
                     popupBoxText.innerHTML = "";
@@ -87,7 +96,8 @@ function loadProjects() {
     projectsListDiv.setAttribute("class","projects-list");
     //Add all projects to the list
     addProjectToList(projectsListDiv,"JavaScript Mini Projects","jsminiprojects");
-    for(let i=0;i<7;i++){
+    addProjectToList(projectsListDiv,"Todo List","todo-list");
+    for(let i=0;i<6;i++){
         addProjectToList(projectsListDiv,"PLACEHOLDER","");
     }
     projectsDiv.appendChild(projectsListDiv);
