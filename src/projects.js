@@ -50,7 +50,16 @@ function addClickEventToButtons() {
                     popupBoxText.innerHTML = `A simple todo list web app created using JavaScript. 
                     The primary purpose was to practice webpack and file organization, as well as OOP.
                     However, I was quite happy with the result, which is why it is not considered a "mini project".
-                    It can be found <a href="./JSProjects/index.html">here</a>.`;
+                    It can be found <a href="./JSProjects/todo-list/index.html">here</a>.`;
+                    break;
+
+                case "battleship":
+                    popupBoxHeader.innerHTML = "Battleship";
+                    popupBoxText.innerHTML = `A simple implementation of the game battleship,
+                    except the player cannot choose where their ships go. THe player plays against
+                    a computer making random moves. Mainly used to practice Test Driven Development
+                    principles. It can be found <a href="./JSProjects/battleship/index.html">here</a>.
+                    `;
                     break;
 
                 default:
@@ -97,9 +106,7 @@ function loadProjects() {
     //Add all projects to the list
     addProjectToList(projectsListDiv,"JavaScript Mini Projects","jsminiprojects");
     addProjectToList(projectsListDiv,"Todo List","todo-list");
-    for(let i=0;i<6;i++){
-        addProjectToList(projectsListDiv,"PLACEHOLDER","");
-    }
+    addProjectToList(projectsListDiv,"Battleship","battleship");
     projectsDiv.appendChild(projectsListDiv);
 
     //Popup Background
