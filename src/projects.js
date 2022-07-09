@@ -56,9 +56,18 @@ function addClickEventToButtons() {
                 case "battleship":
                     popupBoxHeader.innerHTML = "Battleship";
                     popupBoxText.innerHTML = `A simple implementation of the game battleship,
-                    except the player cannot choose where their ships go. THe player plays against
+                    except the player cannot choose where their ships go. The player plays against
                     a computer making random moves. Mainly used to practice Test Driven Development
                     principles. It can be found <a href="./JSProjects/battleship/index.html">here</a>.
+                    `;
+                    break;
+
+                case "memory-game":
+                    popupBoxHeader.innerHTML = "Memory Game";
+                    popupBoxText.innerHTML = `A memory game inspired by the visual memory test in
+                    humanbenchmark.com . Utilizes React, particularly focusing on practicing React
+                    hooks and functional components. The source code can be found 
+                    <a href="https://github.com/arColm/javascript-miniprojects/tree/main/memory-game/src">here</a>.
                     `;
                     break;
 
@@ -107,6 +116,7 @@ function loadProjects() {
     addProjectToList(projectsListDiv,"JavaScript Mini Projects","jsminiprojects");
     addProjectToList(projectsListDiv,"Todo List","todo-list");
     addProjectToList(projectsListDiv,"Battleship","battleship");
+    addProjectToList(projectsListDiv,"Memory Game","memory-game");
     projectsDiv.appendChild(projectsListDiv);
 
     //Popup Background
