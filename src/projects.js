@@ -105,7 +105,8 @@ function loadProjects() {
 
     //Description of section
     let projectsText = document.createElement("p");
-    projectsText.innerHTML=`Any large scale projects I work on will be here, but most of my work can be found on 
+    projectsText.innerHTML=`Any games I have worked on can be found on <a href="https://pokerdf.itch.io/">itch.io</a>.
+    <br>Any front-end based projects I work on can be found here, but most of my back-end work can be found on 
     <a href="https://github.com/arColm">github</a>.`;
     projectsDiv.appendChild(projectsText);
 

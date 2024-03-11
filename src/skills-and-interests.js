@@ -21,12 +21,13 @@ function loadSkillsAndInterests() {
     <p>Over 5000 lines of code</p>
     <ul>
         <li>Java</li>
+        <li>C#</li>
+        <li>Python</li>
     </ul>
 
     <p>Over 1000 lines of code</p>
     <ul>
         <li>C</li>
-        <li>Python</li>
         <li>HTML & CSS</li>
         <li>JavaScript</li>
         <li>Bash</li>
@@ -41,6 +42,7 @@ function loadSkillsAndInterests() {
     <ul>
         <li>Data Structures and Algorithms</li>
         <li>Model-Based Programming</li>
+        <li>Unity</li>
     </ul>`;
 
     skillsContent.appendChild(developmentSkillsDiv);

@@ -30,7 +30,7 @@ const body = document.querySelector("#content");
     textDiv.appendChild(header);
 
     let p = document.createElement("p");
-    p.innerHTML = `I am Jacob, also known as arColm, a student enrolled in McGill University studying Software Engineering.
+    p.innerHTML = `Welcome to my page! I am a student enrolled in McGill University studying Software Engineering.
     I enjoy playing all sorts of video games, which brought about my passion for programming.
     I hope to be able to transfer this passion to the industry.`
     textDiv.appendChild(p);
