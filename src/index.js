@@ -25,4 +25,4 @@ buttons.forEach(button => {
 
 
 
-loadPage("about");
+loadPage("projects");
