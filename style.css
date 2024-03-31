@@ -2,6 +2,14 @@
 * {
     font-family:"Roboto",sans-serif;
 }
+a {
+    font-style:normal;
+    text-decoration: none;
+    color:grey;
+}
+a:hover {
+    color:darkgrey;
+}
 
 body {
     margin:0;
@@ -113,6 +121,17 @@ button:hover:not(.selected),
 
 /* Projects */
 
+.popup-container {
+    color:white;
+    display:flex;
+    margin:100px;
+    flex-direction:column;
+    align-items:center;
+    border-bottom:1px inset white;
+    border-top: 1px inset white;
+    text-align:center;
+}
+
 .projects {
     color:white;
     display:flex;
@@ -122,6 +141,17 @@ button:hover:not(.selected),
     border-bottom:1px inset white;
     border-top: 1px inset white;
     text-align:center;
+    width:100%;
+}
+
+.projects.text:not(:first-of-type) {
+    margin-top:0px;
+    margin-bottom:0px;
+}
+
+.projects.text:not(:last-of-type) {
+    margin-top:0px;
+    margin-bottom:0px;
 }
 
 .projects a {
@@ -167,7 +197,7 @@ button:hover:not(.selected),
     z-index:1;
 }
 
-.projects .popup {
+.popup {
     position:fixed;
     bottom:0;
     right:0;
@@ -180,21 +210,24 @@ button:hover:not(.selected),
     z-index:-2;
 }
 
-.projects .popup-box {
+.popup-box {
     position:fixed;
-    border:1px solid white;
     width:50%;
     height:50%;
     opacity:1;
-    background-color: rgb(34, 34, 49);
+    background-color: rgb(49, 30, 54);
     visibility:hidden;
     display:flex;
     flex-direction:column;
-    padding:10px;
+    padding:2%;
     border-radius:1vw;
 }
 
-.projects .popup-box #close-popup {
+.popup-box h2 {
+    font-size: 48px;
+}
+
+.popup-box #close-popup {
     width:25px;
     height:25px;
     border-radius:12.5px;
@@ -207,7 +240,7 @@ button:hover:not(.selected),
     padding:0;
 }
 
-.projects .popup-box #close-popup:hover {
+.popup-box #close-popup:hover {
     background-color:rgb(113, 43, 226);
 }
 
