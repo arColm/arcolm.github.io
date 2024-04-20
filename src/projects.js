@@ -29,7 +29,9 @@ function addGameProjectToList(list,project,projectID,imageSrc) {
     projectButton.setAttribute("style",`background: no-repeat center/100%
                                         linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
                                         url(${imageSrc});
-                                        background-size: 100% 100%;
+                                        
+                                        background-size: cover;  
+                                        background-position: center;
                                         width: 100%;
                                         `);
 
@@ -60,44 +62,56 @@ function addClickEventToButtons() {
     
             let id = button.getAttribute("id");
             switch(id) {
+                
+                case "piedpiper":
+                    popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2643601?bg_color=15060a&amp;fg_color=ffffff&amp;link_color=5b8c7c&amp;border_color=45363a" width="552" height="167"><a href="https://pokerdf.itch.io/pied-piper">PIED PIPER by arColm</a></iframe>`;
+                    popupBoxText.innerHTML = `A short puzzle game made in Unity and C#, for 
+                                                <a href="https://ldjam.com/events/ludum-dare/55/pied-piper"> Ludum Dare 55</a>, with the theme being "summoning".<br>
+                                                In this game you play as the Pied Piper and attempt to escape a dungeon by solving puzzles using rats that you
+                                                summon with your flute.<br>
+                                                I worked alone on this project and created it over 48 hours, including all of the sprites,
+                                                sounds, music and scripts. I am quite happy with how the game performed, as it was my first
+                                                Ludum Dare submission, and was the shortest amount of time I had for a game. <br>
+                                                <a href="https://pokerdf.itch.io/pied-piper"> PLAY FOR FREE HERE </a>.<br>
+                                                Additionally, the source code can be found <a href="https://github.com/arColm/ldjam-55"> here </a>.
+                                                `;
+                    break;
+
                 case "offshore":
-                    popupBoxHeader.innerHTML = "Offshore";
+                    popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2559909?bg_color=242129&amp;fg_color=ffffff&amp;link_color=b6b1e6&amp;border_color=333333" width="552" height="167"><a href="https://pokerdf.itch.io/offshore">OFFSHORE by arColm, elsidraws</a></iframe>`;
                     popupBoxText.innerHTML = `A 2D Platforming game made in Unity and C# for
                                                 <a href="https://itch.io/jam/mini-jam-153-fishing"> Mini Jam 153 </a>.
                                                 Worked with artist
-                                                <a href="https://linktr.ee/gisellepe"> @elsidraws </a>.
+                                                <a href="https://linktr.ee/gisellepe"> @elsidraws </a>.<br>
                                                 It achieved rank 17 out of 234 entries, and a significant reason for why the game did not rank
                                                 higher was because the learning curve was too sharp, making players either move on to another game in the
                                                 jam and quit, or struggle in the first 2 screens for around 30 minutes. This was a great learning experience
                                                 for level design, as well as everything else I was responsible for as a programmer, especially as it was
-                                                my first time working with someone else on a game.
-                                                The game can be found
-                                                <a href="https://pokerdf.itch.io/offshore"> here </a>.`;
+                                                my first time working with someone else on a game.<br>
+                                                <a href="https://pokerdf.itch.io/offshore"> PLAY FOR FREE HERE </a>.`;
                     break;
                 case "otterdive":
-                    popupBoxHeader.innerHTML = "Otter Dive";
-                    popupBoxText.innerHTML = `A 2D Platforming game made in Unity and C# for
-                                                an intra-university GameDev club game jam.
+                    popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2604578?border_width=0&amp;bg_color=000000&amp;fg_color=fcc76f&amp;link_color=fa5c5c&amp;border_color=333333" width="550" height="165"><a href="https://pokerdf.itch.io/otter-dive">Otter Dive by arColm</a></iframe>`;
+                    popupBoxText.innerHTML = `A 2D Platforming game made in Unity and C# which won 1st place in an intra-university GameDev club game jam. <br>
                                                 For this game I focused on utilizing newer techniques such as deferred rendering and
-                                                more complicated raycast techniques to detect collision.
-                                                The game can be found
-                                                <a href="https://pokerdf.itch.io/otter-dive"> here </a>.`;
+                                                more complicated raycast techniques to detect collision.<br>
+                                                
+                                                <a href="https://pokerdf.itch.io/otter-dive"> PLAY FOR FREE HERE </a>`;
                     break;
                 case "greed":
-                    popupBoxHeader.innerHTML = "Greed";
+                    popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2500208?bg_color=0f0000&amp;fg_color=f8b9b9&amp;link_color=cf9c9c&amp;border_color=3e3a3a" width="552" height="167"><a href="https://pokerdf.itch.io/greed">Greed by arColm</a></iframe>`;
                     popupBoxText.innerHTML = `A boss rush game made in Unity and C# for
-                                                <a href="https://itch.io/jam/boss-rush-jam-2024"> Boss Rush Game Jam </a>.
+                                                <a href="https://itch.io/jam/boss-rush-jam-2024"> Boss Rush Game Jam </a>.<br>
                                                 This game had a relatively large scale to my previous game Octopus Quest
                                                 and was my first game jam experience. It ranked 136 out of 398 entries, which
                                                 was actually very high, given that I did not have any audio or music which gave me a 
                                                 default 0 for that category, and that all the art was done by me - not an artist.
-                                                Other than those categories, I was quite happy with how the game ended up.
-                                                The game can be found
-                                                <a href="https://pokerdf.itch.io/greed"> here </a>.`;
+                                                Other than those categories, I was quite happy with how the game ended up.<br>
+                                                <a href="https://pokerdf.itch.io/greed"> PLAY FOR FREE HERE </a>.`;
                     break;
                 case "octopusquest":
-                    popupBoxHeader.innerHTML = "Octopus Quest";
-                    popupBoxText.innerHTML = `A short game made in Unity and C#.
+                    popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2476315?bg_color=0a0937&amp;fg_color=ecc0c0&amp;link_color=fa5c5c&amp;border_color=333333" width="552" height="167"><a href="https://pokerdf.itch.io/octopus-quest">Octopus Quest by arColm</a></iframe>`;
+                    popupBoxText.innerHTML = `A short game made in Unity and C#.<br>
                                                 This was the first game I had ever created in Unity. I decided to finish it to experience how
                                                 finishing a game project would feel like. The overall polish of this game was quite low, because
                                                 I wanted to participate in the Boss Rush Game Jam 2024 to create "Greed" as soon as possible to give myself
@@ -105,9 +119,8 @@ function addClickEventToButtons() {
                                                 knowledge between myself as a developer and a player playing for the first time was much more significant
                                                 than I had anticipated. So, in my next few games I had attempted to reduce the starting difficulty curve
                                                 and added more tutorials. This took a while to get right because personally I enjoy difficult games, but
-                                                I would like to think that I eventually got it to work.
-                                                The game can be found
-                                                <a href="https://pokerdf.itch.io/octopus-quest"> here </a>`;
+                                                I would like to think that I eventually got it to work.<br>
+                                                <a href="https://pokerdf.itch.io/octopus-quest"> PLAY FOR FREE HERE </a>`;
                     break;
                 case "jsminiprojects":
                     popupBoxHeader.innerHTML = "JavaScript Mini Projects";
@@ -151,7 +164,8 @@ function addClickEventToButtons() {
     })
 
     
-    let a = [closePopupBox,popup];
+    //let a = [closePopupBox,popup];
+    let a = [popup];
     a.forEach(element => {
         element.addEventListener("click", e=> {
             popup.style.zIndex="-2";
@@ -196,6 +210,7 @@ function loadProjects() {
     //List of games
     let gamesListDiv = document.createElement("div");
     gamesListDiv.setAttribute("class","projects-list");
+    addGameProjectToList(gamesListDiv,"PIED PIPER","piedpiper","images/piedpiper.png");
     addGameProjectToList(gamesListDiv,"Otter Dive","otterdive", "images/otterdive.png");
     addGameProjectToList(gamesListDiv,"Offshore","offshore", "images/offshore.png");
     addGameProjectToList(gamesListDiv,"Greed","greed", "images/greed.png");
@@ -239,7 +254,7 @@ function loadProjects() {
     closePopupButton.innerHTML="X";
     closePopupButton.setAttribute("type","button");
     closePopupButton.setAttribute("id","close-popup");
-    popupBox.appendChild(closePopupButton);
+    //popupBox.appendChild(closePopupButton);
     let popupBoxHeader = document.createElement("h2");
     popupBox.appendChild(popupBoxHeader);
     let popupBoxText = document.createElement("p");
