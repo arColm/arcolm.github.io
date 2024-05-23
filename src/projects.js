@@ -67,6 +67,8 @@ function addClickEventToButtons() {
                     popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2643601?bg_color=15060a&amp;fg_color=ffffff&amp;link_color=5b8c7c&amp;border_color=45363a" width="552" height="167"><a href="https://pokerdf.itch.io/pied-piper">PIED PIPER by arColm</a></iframe>`;
                     popupBoxText.innerHTML = `A short puzzle game made in Unity and C#, for 
                                                 <a href="https://ldjam.com/events/ludum-dare/55/pied-piper"> Ludum Dare 55</a>, with the theme being "summoning".<br>
+                                                This game achieved 3rd place overall out of around 450 entries, and 3rd place in theme. This placement was well beyond my expectations,
+                                                and I was very happy with how it turned out. <br>
                                                 In this game you play as the Pied Piper and attempt to escape a dungeon by solving puzzles using rats that you
                                                 summon with your flute.<br>
                                                 I worked alone on this project and created it over 48 hours, including all of the sprites,
