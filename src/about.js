@@ -30,9 +30,11 @@ const body = document.querySelector("#content");
     textDiv.appendChild(header);
 
     let p = document.createElement("p");
-    p.innerHTML = `Welcome to my page! I am a student enrolled in McGill University studying Software Engineering.
-    I enjoy playing all sorts of video games, which brought about my passion for programming.
-    I hope to be able to transfer this passion to the industry.`
+    p.innerHTML = `Welcome to my page! I am a recent graduate from McGill University with a Bachelor of Software Engineering.
+    I enjoy playing all sorts of video games, which brought about my passion for programming. <br>
+    Outside of playing video games, I also really enjoy making them.
+    Some parts of game dev I particularly enjoy are game design and engine programming, especially learning about the internals of how games work.
+    I hope to be able to transfer this passion to not only the games industry, but also the software industry in general.`
     textDiv.appendChild(p);
 
     about.appendChild(textDiv);

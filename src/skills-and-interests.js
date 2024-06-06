@@ -22,6 +22,7 @@ function loadSkillsAndInterests() {
     <ul>
         <li>Java</li>
         <li>C#</li>
+        <li>C++23</li>
         <li>Python</li>
     </ul>
 
@@ -40,9 +41,10 @@ function loadSkillsAndInterests() {
     developmentSkillsDiv.innerHTML = `
     <h3>Development Skills</h3>
     <ul>
+        <li>Unity</li>
         <li>Data Structures and Algorithms</li>
         <li>Model-Based Programming</li>
-        <li>Unity</li>
+        <li>Test Driven Development</li>
     </ul>`;
 
     skillsContent.appendChild(developmentSkillsDiv);
