@@ -155,7 +155,6 @@ function addClickEventToButtons() {
                     popupBoxHeader.innerHTML = "Todo List";
                     popupBoxText.innerHTML = `A simple todo list web app created using JavaScript. 
                     The primary purpose was to practice webpack and file organization, as well as OOP.
-                    However, I was quite happy with the result, which is why it is not considered a "mini project".
                     It can be found <a href="./JSProjects/todo-list/index.html">here</a>.`;
                     break;
 
@@ -243,25 +242,25 @@ function loadProjects() {
     //Header
     let projectsHeader = document.createElement("h2");
     projectsHeader.innerHTML="Projects";
-    //projectsDiv.appendChild(projectsHeader);
+    projectsDiv.appendChild(projectsHeader);
 
     //Description of section
     let projectsText = document.createElement("p");
     projectsText.innerHTML=`
-    <br>Any front-end based projects I work on can be found here, but most of my back-end work can be found on 
+    <br>Any front-end based projects I work on can be found here, but most of my back-end work is private or can be found on 
     <a href="https://github.com/arColm">github</a>.`;
-    //projectsDiv.appendChild(projectsText);
+    projectsDiv.appendChild(projectsText);
 
 
     //List of projects
     let projectsListDiv = document.createElement("div");
     projectsListDiv.setAttribute("class","projects-list");
     //Add all projects to the list
-    addProjectToList(projectsListDiv,"JavaScript Mini Projects","jsminiprojects","images/profile-picture.jpg");
+    //addProjectToList(projectsListDiv,"JavaScript Mini Projects","jsminiprojects","images/profile-picture.jpg");
     addProjectToList(projectsListDiv,"Todo List","todo-list");
     addProjectToList(projectsListDiv,"Battleship","battleship");
-    addProjectToList(projectsListDiv,"Memory Game","memory-game");
-    //projectsDiv.appendChild(projectsListDiv);
+    //addProjectToList(projectsListDiv,"Memory Game","memory-game");
+    projectsDiv.appendChild(projectsListDiv);
 
     //Popup Background
     let popupBackground = document.createElement("div");
