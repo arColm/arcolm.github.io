@@ -62,6 +62,31 @@ function addClickEventToButtons() {
     
             let id = button.getAttribute("id");
             switch(id) {
+                case "abyss":
+                    popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2760795?bg_color=070918&amp;fg_color=ffffff&amp;link_color=3afffb&amp;border_color=353438" width="552" height="167"><a href="https://pokerdf.itch.io/abyss">abyss by arColm, elsidraws</a></iframe>`;
+                    popupBoxText.innerHTML = `<a href="https://pokerdf.itch.io/abyss"> PLAY FOR FREE HERE </a><br>
+                    Platforming game made in 3 days using Unity and C# for
+                    <a href="https://itch.io/jam/mini-jam-160-light"> MiniJam 160 - Light </a>, with the limitation being "Speed is Key".
+                    Worked with artist <a href="https://linktr.ee/gisellepe"> @elsidraws </a>.<br><br>
+                    The game achieved rank 1 in Presentation, and rank 6 Overall. We were quite happy with the placement for presentation, and
+                    although much of it was because of the artist who drew all of the textures, I was quite happy with the particle effects and other
+                    visual effects that I contributed. The overall score was not as high as I had hoped, especially since this is one of my favorite games that I have
+                    made - but by looking at the criticisms we received, I believe it was more of a misunderstanding of the target audience in the game jam. I had
+                    attempted to make this game fairly easy, and everyone who had the chance to playtest it gave feedback that it was indeed easy. However,
+                    many people thought it was difficult, so while I hate to blame my audience, I think this is the best compromise between me wanting to
+                    make a challenging game, and a game that is easy to beat for a jam. Another significant reason for our downfall is likely due to
+                    poor tutorialization of the game, and we realized this after having some of our friends play after release, that the tutorial
+                    did not illustrate all of the mechanics very clearly.<br>
+                    My goal for this jam was to continue improving the organization and architecture of my games. In particular, I wanted to reduce the coupling between my scripts,
+                    and especially to stop myself from using a Singleton for the player, despite its convenience. To this extent I largely used events with the
+                    Observer pattern. On top of this, I wanted to continue practicing visual effects, which is can be shown in the lightning effect of the game.
+                    In the future I would have liked to experiment with implementing the lightning effect with shaders or compute shaders if possible, instead of
+                    a set of line renderers, but given the time constraint of the jam I did not have time to learn for the game. Finally, I also just
+                    wanted to improve my ability to work with someone else on a game, and I think we worked together much better this time around, finishing
+                    most of the game within 48 hours of the 72 hours alloted.<br>
+                    Overall I consider this a fairly successful game.
+                    `;
+                    break;
                 case "cardinal":
                     popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2730814?border_width=0&amp;bg_color=00303b&amp;fg_color=f1f2da&amp;link_color=8c8d79&amp;border_color=333333" width="550" height="165"><a href="https://pokerdf.itch.io/cardinal">CARDINAL by arColm</a></iframe>`;
                     popupBoxText.innerHTML = `<a href="https://pokerdf.itch.io/cardinal"> PLAY FOR FREE HERE </a><br>
@@ -230,6 +255,7 @@ function loadProjects() {
     //List of games
     let gamesListDiv = document.createElement("div");
     gamesListDiv.setAttribute("class","projects-list");
+    addGameProjectToList(gamesListDiv,"abyss","abyss","images/abyss.png");
     addGameProjectToList(gamesListDiv,"CARDINAL", "cardinal", "images/cardinal.png");
     addGameProjectToList(gamesListDiv,"PIED PIPER","piedpiper","images/piedpiper.png");
     addGameProjectToList(gamesListDiv,"Otter Dive","otterdive", "images/otterdive.png");

@@ -240,6 +240,7 @@ button:hover:not(.selected),
     flex-direction:column;
     padding:2%;
     border-radius:1vw;
+    font-size:medium;
 }
 
 .popup-box h2 {
