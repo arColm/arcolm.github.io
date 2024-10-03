@@ -6,11 +6,22 @@ const body = document.querySelector("#content");
  * @param {*String} project 
  * @param {*String} projectID 
  */
-function addProjectToList(list,project,projectID) {
+function addProjectToList(list,project,projectID,imageSrc = "") {
     let projectButton = document.createElement("button");
     projectButton.setAttribute("type","button");
     projectButton.setAttribute("id",`${projectID}`);
     projectButton.innerHTML=`${project}`;
+
+    if(imageSrc!="") {
+        projectButton.setAttribute("style",`background: no-repeat center/100%
+            linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)),
+            url(${imageSrc});
+            
+            background-size: cover;  
+            background-position: center;
+            width: 100%;
+            `);
+    }
 
     list.appendChild(projectButton);
 }
@@ -200,7 +211,27 @@ function addClickEventToButtons() {
                     <a href="https://github.com/arColm/javascript-miniprojects/tree/main/memory-game/src">here</a>.
                     `;
                     break;
-
+                case "fluid-simulation":
+                    popupBoxHeader.innerHTML = "SPH Fluid Simulation";
+                    popupBoxText.innerHTML = `
+                    A Lagrangian fluid simulation based on SPH principles written in Unity, C# and HLSL to configure the compute shaders
+                    used to calculate the particle interactions. Features 2D and 3D simulations, with both particle and 
+                    marching squares/cubes display. It also includes configurable fish, which behave as boids when submerged and
+                    can interact with the water, causing displacement. There are many parameters to alter and change, however
+                    due to the nature of SPH simulations, the particles are very sensitive to parameter change.\n
+                    A video can be found <a href="https://www.youtube.com/watch?v=NSXLsK7drIE"> here</a>.
+                    `;
+                    break;
+                case "voxel-engine":
+                    popupBoxHeader.innerHTML = "Voxel Engine";
+                    popupBoxText.innerHTML = `
+                    A voxel engine written in C++ with OpenGL. It features a procedural terrain generation with details such as trees 
+                    and bodies of water. <b>Multithreaded rendering</b> is also used in the project to maintain good framerates as the 
+                    player generates new chunks. It also includes a day/night cycle, with transparent bodies of water. Finally, there is
+                    a lighting model involving diffuse and ambient lighting, as well as shadowmapping.\n
+                    A video can be found <a href="https://www.youtube.com/watch?v=CAGlL6t1jOQ"> here</a>.
+                    `;
+                    break;
                 default:
                     popupBoxHeader.innerHTML = "PLACEHOLDER";
                     popupBoxText.innerHTML = "";
@@ -283,8 +314,10 @@ function loadProjects() {
     projectsListDiv.setAttribute("class","projects-list");
     //Add all projects to the list
     //addProjectToList(projectsListDiv,"JavaScript Mini Projects","jsminiprojects","images/profile-picture.jpg");
-    addProjectToList(projectsListDiv,"Todo List","todo-list");
-    addProjectToList(projectsListDiv,"Battleship","battleship");
+    //addProjectToList(projectsListDiv,"Todo List","todo-list");
+    //addProjectToList(projectsListDiv,"Battleship","battleship");
+    addProjectToList(projectsListDiv,"Fluid Simulation","fluid-simulation", "images/fluid-simulation.png");
+    addProjectToList(projectsListDiv,"Voxel Engine","voxel-engine", "images/voxel-engine.png");
     //addProjectToList(projectsListDiv,"Memory Game","memory-game");
     projectsDiv.appendChild(projectsListDiv);
 
