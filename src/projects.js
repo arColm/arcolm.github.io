@@ -304,7 +304,7 @@ function loadProjects() {
     //Description of section
     let projectsText = document.createElement("p");
     projectsText.innerHTML=`
-    <br>Any front-end based projects I work on can be found here, but most of my back-end work is private or can be found on 
+    <br>Any other projects I work on can be found here, but most of my back-end work is private or can be found on 
     <a href="https://github.com/arColm">github</a>.`;
     projectsDiv.appendChild(projectsText);
 
