@@ -28,9 +28,9 @@ function loadSkillsAndInterests() {
 
     <p>Over 1000 lines of code</p>
     <ul>
+        <li>GLSL</li>
+        <li>Typescript</li>
         <li>C</li>
-        <li>HTML & CSS</li>
-        <li>JavaScript</li>
         <li>Bash</li>
     </ul>`;
 
@@ -42,6 +42,8 @@ function loadSkillsAndInterests() {
     <h3>Development Skills</h3>
     <ul>
         <li>Unity</li>
+        <li>Vulkan</li>
+        <li>OpenGL</li>
         <li>Data Structures and Algorithms</li>
         <li>Model-Based Programming</li>
         <li>Test Driven Development</li>

@@ -279,10 +279,19 @@ function addClickEventToButtons() {
                     popupBoxText.innerHTML = `
                     Vulkan renderer written in C++. Its primary showcase is grass, however it also features: <b>Screen Space Reflections</b> on a lake
                     using deferred rendering techniques, <b>cascaded shadow mapping</b>, mie and rayleigh reflections for the sun and skybox.\n
-                    The focus was learning Vulkan, and so the codebase started from vkguide with bare minimum abstractions and features.
+                    The focus was learning Vulkan, and also to try more advanced rendering techniques such as g-buffers.
                     A video can be found <a href="https://www.youtube.com/watch?v=ms9te2xd34Q"> here</a>.\n
                     The repository can be found <a href="https://github.com/arColm/grass_renderer"> here</a>.\n
 
+                    `;
+                    break;
+                case "pokerogue-starter":
+                    popupBoxHeader.innerHTML = "Pokerogue Randomizer";
+                    popupBoxText.innerHTML = `
+                    <b>NextJS</b> based static website written mainly for me and my friend playing Pokerogue together.
+                    It obtains its data by querying both a Pokemon public API, and also parsing the public repository for Pokerogue and
+                    matching details between the data gathered from both.\n
+                    The website can be found  <a href="https://test-website-2j6.pages.dev/"> here</a>.
                     `;
                     break;
                 default:
@@ -374,6 +383,7 @@ function loadProjects() {
     addProjectToList(projectsListDiv,"Vulkan Grass Renderer","vulkan-grass-renderer", "images/vulkan-grass-renderer.png");
     addProjectToList(projectsListDiv,"Fluid Simulation","fluid-simulation", "images/fluid-simulation.png");
     addProjectToList(projectsListDiv,"Voxel Engine","voxel-engine", "images/voxel-engine.png");
+    addProjectToList(projectsListDiv,"Pokerogue Randomizer","pokerogue-starter", "images/pokerogue-starter.png");
     //addProjectToList(projectsListDiv,"Memory Game","memory-game");
     projectsDiv.appendChild(projectsListDiv);
 
