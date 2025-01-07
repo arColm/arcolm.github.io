@@ -73,6 +73,48 @@ function addClickEventToButtons() {
     
             let id = button.getAttribute("id");
             switch(id) {
+                case "keyba":
+                    popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/3018863?dark=true" width="552" height="167"><a href="https://pokerdf.itch.io/keyba">Keyba by arColm, elsidraws</a></iframe>`;
+                    popupBoxText.innerHTML = `<a href="https://pokerdf.itch.io/keyba"> PLAY FOR FREE HERE </a><br>
+                    Platforming puzzle game made in 3 days usign Unity and C# for
+                    <a href="https://ldjam.com/events/ludum-dare/56/keyba"> Ludum Dare 56 - Tiny Creatures </a>.
+                    Worked with artist <a href="https://linktr.ee/gisellepe"> @elsidraws </a>.<br><br>
+                    The game achieved an overall ranking of 80 out of 1478 submissions, which places it at top 5%, which we are quite happy with.
+                    Additionally, we got top 22 in Innovation, which was top 1%!\n
+                    This was my first time attempting to use shaders significantly in a game - the lightning effect on one of the main hazards in the game.
+                    Some difficulties arose with trying to not only make it look good in general, but also to match the art style and color scheme of
+                    the artist I was working with, who was doing the remainder of the assets. We chose to use shaders for the hazard because it couldn't be 
+                    represented by a static size sprite, and also because I was learning and wanted to apply my shader skills.\n
+                    The biggest draw to the game was that it required the player to press multiple keys at the same time - this being the core mechanic of the
+                    game. However, while both of us did not encounter any issues during playtesting, we soon learned after release that many keyboards
+                    were actually unable to press more than around 4-5 keys at the same time. This also varied between keyboards: hence both of our keyboards
+                    working perfectly fine for the game. We also did not have time to accomodate different keyboard layouts, although we did consider this.
+                    All things considered, I am a little disappointed that this issue with keyboards ruined the experience for many people, although the ones
+                    that did play through game seemed to very much enjoy it!
+
+                    `;
+                    break;
+                case "lemur":
+                    popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2903982?border_width=0&amp;bg_color=f4cfa9&amp;fg_color=cf36b8" width="550" height="165"><a href="https://pokerdf.itch.io/lemur">LEMUR by arColm</a></iframe>`;
+                    popupBoxText.innerHTML = `<a href="https://pokerdf.itch.io/lemur"> PLAY FOR FREE HERE </a><br>
+                    Platforming puzzle game made in 4 days usign Unity and C# for
+                    <a href="https://itch.io/jam/gmtk-2024/rate/2903982"> GMTK 2024 - Built to Scale </a>.
+                    I worked alone on this game, and it achieved an enjoyment rank of 942 out of 7589, top 12%.\n
+                    The concept behind the game was that you were "creating a build" to "scale a mountain". I think this concept was
+                    not very well received, as I supposed it was a bit of a cop-out from making a game for the actual theme - understandably.
+                    Making this game involved creating many different platforming features that the player could choose from, such as a grappling hook,
+                    double jump, dash and so on. There are also 2 endings, one of which is a secret ending that involved the player finding all the items and
+                    going through a more difficult course at the end of the game to reach a "true ending" of sorts.\n
+                    I tried to use this as a test to see how many features I could implement given the timeline of 4 days,
+                    especially since I had to do all of the art and sounds myself. On that note, I was also very happy with how the game looked, and in
+                    particular I am happy with the trees which enhance the feel of the game. I also attempted to create a sort of abstract narrative
+                    with not knowing what the player was: a robot trying to climb the mountain which was actually a seed for the sakura trees you see
+                    throughout the game. I don't think of the plot as anything particularly deep, but it was a bit more thought out than my other games.\n
+                    I am a little disappointed in the ratings, however I think making the game has taught me about my limits, and also enhanced my skills 
+                    in other areas of game development.
+
+                    `;
+                    break;
                 case "abyss":
                     popupBoxHeader.innerHTML = `<iframe frameborder="0" src="https://itch.io/embed/2760795?bg_color=070918&amp;fg_color=ffffff&amp;link_color=3afffb&amp;border_color=353438" width="552" height="167"><a href="https://pokerdf.itch.io/abyss">abyss by arColm, elsidraws</a></iframe>`;
                     popupBoxText.innerHTML = `<a href="https://pokerdf.itch.io/abyss"> PLAY FOR FREE HERE </a><br>
@@ -232,6 +274,17 @@ function addClickEventToButtons() {
                     A video can be found <a href="https://www.youtube.com/watch?v=CAGlL6t1jOQ"> here</a>.
                     `;
                     break;
+                case "vulkan-grass-renderer":
+                    popupBoxHeader.innerHTML = "Vulkan Grass Renderer";
+                    popupBoxText.innerHTML = `
+                    Vulkan renderer written in C++. Its primary showcase is grass, however it also features: <b>Screen Space Reflections</b> on a lake
+                    using deferred rendering techniques, <b>cascaded shadow mapping</b>, mie and rayleigh reflections for the sun and skybox.\n
+                    The focus was learning Vulkan, and so the codebase started from vkguide with bare minimum abstractions and features.
+                    A video can be found <a href="https://www.youtube.com/watch?v=ms9te2xd34Q"> here</a>.\n
+                    The repository can be found <a href="https://github.com/arColm/grass_renderer"> here</a>.\n
+
+                    `;
+                    break;
                 default:
                     popupBoxHeader.innerHTML = "PLACEHOLDER";
                     popupBoxText.innerHTML = "";
@@ -289,6 +342,8 @@ function loadProjects() {
     addGameProjectToList(gamesListDiv,"abyss","abyss","images/abyss.png");
     addGameProjectToList(gamesListDiv,"CARDINAL", "cardinal", "images/cardinal.png");
     addGameProjectToList(gamesListDiv,"PIED PIPER","piedpiper","images/piedpiper.png");
+    addGameProjectToList(gamesListDiv,"Keyba","keyba","images/keyba.png");
+    addGameProjectToList(gamesListDiv,"LEMUR","lemur","images/lemur.gif");
     addGameProjectToList(gamesListDiv,"Otter Dive","otterdive", "images/otterdive.png");
     addGameProjectToList(gamesListDiv,"Offshore","offshore", "images/offshore.png");
     addGameProjectToList(gamesListDiv,"Greed","greed", "images/greed.png");
@@ -316,6 +371,7 @@ function loadProjects() {
     //addProjectToList(projectsListDiv,"JavaScript Mini Projects","jsminiprojects","images/profile-picture.jpg");
     //addProjectToList(projectsListDiv,"Todo List","todo-list");
     //addProjectToList(projectsListDiv,"Battleship","battleship");
+    addProjectToList(projectsListDiv,"Vulkan Grass Renderer","vulkan-grass-renderer", "images/vulkan-grass-renderer.png");
     addProjectToList(projectsListDiv,"Fluid Simulation","fluid-simulation", "images/fluid-simulation.png");
     addProjectToList(projectsListDiv,"Voxel Engine","voxel-engine", "images/voxel-engine.png");
     //addProjectToList(projectsListDiv,"Memory Game","memory-game");
@@ -342,9 +398,9 @@ function loadProjects() {
 
 
 
+    container.appendChild(projectsDiv);
     container.appendChild(gamesDiv);
     container.appendChild(popupBox);
-    container.appendChild(projectsDiv);
     body.appendChild(container);
     //Add function to buttons
     addClickEventToButtons();
