@@ -278,7 +278,8 @@ function addClickEventToButtons() {
                     popupBoxHeader.innerHTML = "Vulkan Grass Renderer";
                     popupBoxText.innerHTML = `
                     Vulkan renderer written in C++. Its primary showcase is grass, however it also features: <b>Screen Space Reflections</b> on a lake
-                    using deferred rendering techniques, <b>cascaded shadow mapping</b>, mie and rayleigh reflections for the sun and skybox.\n
+                    using deferred rendering techniques, <b>IFFT and JONSWAP generated spectrum</b> for realistic water,
+                    <b>raymarched volumetric clouds</b>, <b>cascaded shadow mapping</b>, mie and rayleigh reflections for the sun and skybox.\n
                     The focus was learning Vulkan, and also to try more advanced rendering techniques such as g-buffers.
                     A video can be found <a href="https://www.youtube.com/watch?v=ms9te2xd34Q"> here</a>.\n
                     The repository can be found <a href="https://github.com/arColm/grass_renderer"> here</a>.\n
