@@ -393,7 +393,7 @@ function loadProjects() {
     //addProjectToList(projectsListDiv,"JavaScript Mini Projects","jsminiprojects","images/profile-picture.jpg");
     //addProjectToList(projectsListDiv,"Todo List","todo-list");
     //addProjectToList(projectsListDiv,"Battleship","battleship");
-    addProjectToList(projectsListDiv,"Vulkan Ocean","vulkan-ocean", "images/vulkan-ocean.png");
+    addProjectToList(projectsListDiv,"Vulkan Ocean","vulkan-ocean", "images/vulkan-ocean.jpg");
     addProjectToList(projectsListDiv,"Vulkan Grass Renderer","vulkan-grass-renderer", "images/vulkan-grass-renderer.png");
     addProjectToList(projectsListDiv,"Fluid Simulation","fluid-simulation", "images/fluid-simulation.png");
     addProjectToList(projectsListDiv,"Voxel Engine","voxel-engine", "images/voxel-engine.png");
