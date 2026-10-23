@@ -295,6 +295,18 @@ function addClickEventToButtons() {
                     The website can be found  <a href="https://test-website-2j6.pages.dev/"> here</a>.
                     `;
                     break;
+                case "vulkan-ocean":
+                    popupBoxHeader.innerHTML = "Vulkan Ocean";
+                    popupBoxText.innerHTML = `
+                    GPU-driven Vulkan renderer written in C++. It renders the ocean using <b>IFFT and JONSWAP generated spectrum</b> techniques for realistic water.
+                    In addition to the water, it also features volumetric clouds, screen-space god rays, SSR and SSAO.
+                    Furthermore, I implemented rain as a <b>particle system</b> using compute shaders.
+                    I also have fish and birds added as <b>boids</b> to give the scene more life.
+                    Finally, I added kelp using <b>Inverse Kinematics</b> that are entirely GPU driven using compute shaders, and are
+                    interactable by the player.
+                    A video can be found <a href="https://www.youtube.com/watch?v=HcM9m7cSv1w"> here</a>.\n
+                    `;
+                    break;
                 default:
                     popupBoxHeader.innerHTML = "PLACEHOLDER";
                     popupBoxText.innerHTML = "";
@@ -381,6 +393,7 @@ function loadProjects() {
     //addProjectToList(projectsListDiv,"JavaScript Mini Projects","jsminiprojects","images/profile-picture.jpg");
     //addProjectToList(projectsListDiv,"Todo List","todo-list");
     //addProjectToList(projectsListDiv,"Battleship","battleship");
+    addProjectToList(projectsListDiv,"Vulkan Ocean","vulkan-ocean", "images/vulkan-ocean.png");
     addProjectToList(projectsListDiv,"Vulkan Grass Renderer","vulkan-grass-renderer", "images/vulkan-grass-renderer.png");
     addProjectToList(projectsListDiv,"Fluid Simulation","fluid-simulation", "images/fluid-simulation.png");
     addProjectToList(projectsListDiv,"Voxel Engine","voxel-engine", "images/voxel-engine.png");
